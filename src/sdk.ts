@@ -34,18 +34,18 @@ export class KaiaSourcifySDK {
 
   constructor() {
     const rpcUrl = process.env.KAIA_RPC_URL;
-    const privateKey = process.env.PRIVATE_KEY;
+    const signerAddress = process.env.SIGNER;
 
     if (!rpcUrl) {
       throw new Error('KAIA_RPC_URL not found in environment variables');
     }
 
-    if (!privateKey) {
+    if (!signerAddress) {
       throw new Error('PRIVATE_KEY not found in environment variables');
     }
 
     this.provider = new ethers.JsonRpcProvider(rpcUrl);
-    this.signer = new ethers.Wallet(privateKey, this.provider);
+    this.signer = new ethers.Wallet(signerAddress, this.provider);
   }
 
   /**
