@@ -5,7 +5,6 @@ import { ethers } from 'ethers';
 import * as dotenv from 'dotenv';
 import * as fs from 'fs';
 import * as path from 'path';
-// Added imports for Node.js environment compatibility
 import FormData from 'form-data';
 import { Blob } from 'buffer';
 
