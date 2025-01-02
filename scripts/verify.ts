@@ -16,7 +16,7 @@ async function main() {
 
     // Check verification status
     const isVerified = await sdk.isVerified("0xYourContractAddress");
-    console.log(`Verification status: ${isVerified ? "Verified" : "Not Verified"}`);
+    console.log(`Verification status: ${isVerified ? "NOT Verified" : "Verified"}`);
   } catch (error) {
     console.error("Verification failed:", error);
   }
