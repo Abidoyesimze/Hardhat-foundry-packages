@@ -1,2 +1,2 @@
-Kaia Hardhat Kit
+# Kaia Hardhat Kit
 Quickly bootstrap your development on Kaia
